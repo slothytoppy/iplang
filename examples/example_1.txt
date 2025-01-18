@@ -1,2 +1,3 @@
-let x = 42;
-x = 42;
+let x = 35;
+let y = 34;
+let z = 69;

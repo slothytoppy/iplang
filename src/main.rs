@@ -96,6 +96,8 @@ impl Parser {
 
                     let var = num_buff.iter().collect::<String>().parse().unwrap();
                     self.push_variable((state_buff.iter().collect::<String>(), VarType::Uint(var)));
+                    state = ParserState::Let;
+                    state_buff.clear();
                 }
             }
         }
